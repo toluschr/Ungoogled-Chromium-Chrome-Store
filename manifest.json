@@ -1,13 +1,15 @@
 {
 	"name": "Ungoogled-Chromium Chrome Store",
-	"version": "0.2.0",
+	"version": "0.3.0",
 	"description": "Install Chrome-Extensions as if you were using Google Chrome",
 	"content_scripts": [
 		{
 			"matches": [
 				"https://chrome.google.com/webstore/*"
 			],
-			"js": ["inject.js"]
+			"js": [
+				"inject.js"
+			]
 		}
 	],
 	"permissions": [
