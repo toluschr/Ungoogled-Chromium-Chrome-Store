@@ -29,7 +29,7 @@
 		window.location = baseUrl.replace("%VERSION", version).replace("%ID", id);
 	}
 
-	function InstallButton (wrapper, id = document.URL.match(/(?<=\/)(\w+)\?hl=.*/)[1]) {
+	function InstallButton (wrapper, id = document.URL.match(/(?<=\/)(\w+)(\?hl=.*|$)/)[1]) {
 		if (wrapper == null) return;
 		wrapper.innerHTML += ibTemplate;
 		this.DOM = wrapper.children[0];
